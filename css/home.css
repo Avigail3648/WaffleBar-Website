@@ -1,0 +1,182 @@
+.links a {
+    font-size: x-large;
+    direction: ltr;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 4vw;
+    text-decoration: none;
+}
+
+.links {
+    height: 13vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    z-index: 1;
+    right: 0%;
+}
+
+.home_page {
+    background-color: white;
+    padding: 3vh;
+    border-left: solid gray;
+    border-right: solid gray;
+    margin-right: 1%;
+}
+
+.colorwhiteall {
+    background-color: white;
+    padding-top: 20vh;
+}
+
+.img1 {
+    float: right;
+    width: 100%;
+    height: 12vh;
+}
+
+#vidio1 {
+    width: 100%;
+    margin-top: 1vh;
+    z-index: -1;
+    position: sticky;
+    top: 1vh;
+}
+
+#logo {
+    width: 15%;
+    height: auto;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    margin-right: 40%;
+    display: block;
+}
+
+main {
+    background-color: white;
+    z-index: 5;
+}
+
+main span {
+    width: 6.5%;
+    position: fixed;
+    top: 40%;
+    z-index: 10;
+}
+
+span a img:only-child {
+    width: 100%;
+}
+
+nav {
+    margin-right: 4%;
+}
+
+nav>a>img {
+    margin-left: 1%;
+    width: 23%;
+}
+
+p::first-line {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+p a {
+    background-color: black;
+    color: bisque;
+    padding: 2% 5% 2% 5%;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: chocolate;
+    padding-right: 9%;
+}
+
+img[src*="3images"] {
+    width: 50%;
+    height: 40%;
+    float: left;
+    margin-bottom: 1%;
+}
+
+#ww {
+    width: 100%;
+    font-size: xx-large;
+}
+
+#imgmisa {
+    width: 100%;
+    height: auto;
+}
+
+.imgg {
+    width: 9%;
+    height: 10vw;
+    padding: 0.2%;
+    padding: 0.4%;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section>div>img:hover {
+    filter: grayscale(0.8);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
+    background-color: antiquewhite;
+}
+
+.footerw {
+    color: rgb(224, 22, 22);
+    text-align: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width :550px) {
+    .img1 {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .links a {
+        font-size: small;
+    }
+
+    article {
+        font-size: x-small;
+    }
+
+    #ww {
+        font-size: small;
+    }
+
+    #vidio1 {
+        height: 40vh;
+    }
+
+    nav>a>img {
+        width: 22.8%;
+    }
+}

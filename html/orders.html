@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנות</title>
+    <link rel="stylesheet" href="../css/orders.css">
+</head>
+
+<body dir="rtl">
+    <header>
+        <div class="links">
+            <div><img class="img1" src="../media/HomePage/IMG1.webp"></div>
+            <a class="home_page" href="./home.html">דף-הבית</a>
+            <a class="tafrit" href="./tafrit.html">תפריט</a>
+            <a class="orders" href="./orders.html">הזמנה</a>
+            <a class="contact_us" href="./contact_us.html">צור-קשר</a>
+        </div>
+    </header><br>
+    <div class="reka_azmana">
+        <br><br><br>
+        <div class="animate2"></div>
+        <br>
+        <div>
+            <h1>טופס הזמנה</h1>
+        </div>
+        <u><a class="linktotafrit" href="tafrit.html" title="למעבר לתפריט לחץ כאן">חזרה לתפריט לחץ כאן</a></u><br><br>
+        <form class="image" action="order_confirmation.html">
+            <label for="firstname">שם פרטי*</label>
+            <input type="text" id="firstname" placeholder="הכנס את שמך הפרטי" required>
+            <br><br>
+            <label for="lastName">שם משפחה*</label>
+            <input type="text" id="lastName" maxlength="15" required>
+            <br><br>
+            <label for="city">כתובת מלאה</label>
+            <input type="text" id="city" maxlength="15" placeholder="יישוב">
+            <input type="text" id="rechov" maxlength="15" placeholder="רחוב">
+            <br class="d-sm-block d-lr-none">
+            <br class="d-sm-block d-lr-none">
+            <input type="number" id="NumBuilding" maxlength="15" placeholder="מספר בניין">
+            <input type="number" id="NumHome" maxlength="15" placeholder="מספר בית">
+            <br><br>
+            <label for="moadon">חבר מועדון</label>
+            <input type=checkbox id="moadon">
+            <br><br>
+            <label for="email">כתובת אימייל</label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="phon">מספר טלפון*</label>
+            <input type="text" id="number" required>
+            <br><br>
+            <legend>שרות בשפה</legend>
+            <label for="hebrew">עברית</label>
+            <input type="radio" name="radio1" id="hebrew" checked>
+            <label for="english">אנגלית</label>
+            <input type="radio" name="radio1" id="english">
+            <label for="arabic">ערבית</label>
+            <input type="radio" name="radio1" id="arabic">
+            <br><br>
+            <label for="date">הכנס תאריך ושעה לקבלת ההזמנה*</label>
+            <input class="time" type="date" id="date" required>
+            <input class="time" type="time" id="time" required>
+            <br><br>
+            <h4> פרוט המנות הנבחרות</h4>
+            <label for="Vafelbelgi">וופל בלגי</label>
+            <select id=" Vafelbelgi">
+                <option>קלאסי</option>
+                <option>תוספת ממרח</option>
+                <option>פררו רושה</option>
+                <option>לוטוס</option>
+                <option>קרמל בננות חם</option>
+                <option>קרפ קפה</option>
+                <option>אוראו</option>
+                <option>פיסטוק</option>
+                <option>קצפת תותים</option>
+                <option>אצבעות קינדר</option>
+                <option>קרמל מלוח</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="shake">מילשייקים</label>
+            <select id="shake">
+                <option>מילשייק וופל בר</option>
+                <option>מילשייק בהרכבה </option>
+                <option>מילשייק נוטלה</option>
+                <option>מילשייק קפה פקאן</option>
+                <option>מילשייק אוראו</option>
+                <option>מילשייק פררו רושה</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="drink">שתיה</label>
+            <select id="drink">
+                <option>אספרסו </option>
+                <option>נס קפה</option>
+                <option>נס על חלב</option>
+                <option>קפוצ'ינו תאילנדי</option>
+                <option>תה</option>
+                <option>קפה שחור</option>
+                <option>שוקו שוקולד לבן</option>
+                <option>שוקו וופל בר</option>
+                <option>סודה/</option>
+                <option>מים מינרלים</option>
+                <option>פיוז טי</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="braekfast">ארוחת בוקר</label>
+            <select id="braekfast">
+                <option>ארוחת בוקר יחיד</option>
+                <option>בוקר פשוט</option>
+                <option>תוספת אומלט</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="salad">סלטים</label>
+            <select id="salad">
+                <option>סלט בריאות</option>
+                <option>סלט וופל בר-</option>
+                <option>סלט חלומי בטטה</option>
+                <option>סלט שורשים אסייתי</option>
+                <option>סלט קיסר</option>
+                <option>סלט פטריות חם</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="pizza">פיצה</label>
+            <select id="pizza">
+                <option>פיצה מרגריטה</option>
+                <option>פיצה בתוספת עגבניה </option>
+                <option>פיצה בתוספת פטריות</option>
+                <option>פיצה בתוספת זיתים</option>
+                <option>פיצה בתוספת טונה</option>
+                <option>פיצה בתוספת בצל</option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="pasta">הפסטות שלנו</label>
+            <select id="pasta">
+                <option>פטוצ'יני/פנה ללא גלוטן</option>
+                <option>רביולי גבינה/בטטה</option>
+                <option>ניוקי וופל בר</option>
+                <option>דואט רביולי ניוקי </option>
+            </select>
+            <label for="howemani">כמות</label>
+            <input type="number" id="howemani" max="120">
+            <br><br>
+
+            <label for="rotev">תוספת רוטב</label>
+            <input type="number" id="rotev" max="35">
+            <label for="learnYearsNum">רמת חריפות</label>
+            <input type="range" id="learnYearsNum">
+            <br><br>
+            <label for="description">יש לכם משהו להוסיף?</label>
+            <textarea id="description"></textarea>
+            <br><br>
+            <input type="submit" value="שליחה">
+            &nbsp;
+            <input type="reset" value="אתחול">
+            <label for="orders">
+                <br>
+                <u><b><a class="linktotafrit" href="../html/tafrit.html" title=" חזרה לתפריט לחץ כאן">חזרה לתפריט לחץ
+                            כאן</a></b></u><br><br>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            <b>הוופל בר</b><br>
+            רשת הוופל בר פועלת בפריסה ארצית<br>
+            ומציע מבחר איכותי של וופל בלגי<br>
+            צרפתי וקפה משובח ועוד הרבה...
+        </p>
+        <p>
+            <b>זמינים לשרותכם</b><br>
+            <b>מייל:</b> wafflebarltd@gmail.com<br>
+            <b>טלפון:</b> 02-6482046
+        </p>
+        <p>
+            <b>מידע נוסף</b><br>
+            הצהרת נגישות<br>
+            תקנון ומדניות ארצית<br>
+            הסניפים שלנו
+        </p>
+        <p>
+            <b>שעות פעילות</b><br>
+            <b> א'-ה'</b>11:00 עד 23:00<br>
+            <b>ו':</b>10:00עד 15:00 <br>
+            <b>מוצ"ש:</b>כשעה לאחר צאת השבת עד 23:30
+        </p>
+    </footer>
+    <div class="footer2">
+        <h3 class="footerw">כל הזכויות שמורות © Avigail <br>⁓ </h3>
+    </div>
+</body>
+
+</html>

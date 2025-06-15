@@ -1,0 +1,8 @@
+.end {
+   color: orangered;
+   background-color: black;
+   direction: rtl;
+   padding: 8%;
+   height: 80vh;
+   font-size: 150%;
+}

@@ -1,0 +1,153 @@
+body {
+    direction: rtl;
+}
+
+a {
+    font-size: x-large;
+    direction: ltr;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 4vw;
+    text-decoration: none;
+}
+
+.links {
+    height: 13vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
+    right: 0%;
+}
+
+.contact_us {
+    background-color: white;
+    padding: 3vh;
+    border-left: solid gray;
+    border-right: solid gray;
+}
+
+.home_page {
+    margin-right: 2%;
+}
+
+.img1 {
+    float: right;
+    width: 100%;
+    height: 12vh;
+}
+
+.imglomakor {
+    margin-top: 5%;
+    width: 97%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.imglomakor:hover {
+    filter: brightness(1.2);
+}
+
+.words {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: xx-large;
+    padding: 5%;
+}
+
+.q {
+    flex-direction: column;
+}
+
+.sma {
+    display: flex;
+    justify-content: space-around;
+}
+
+.w {
+    padding: 3%;
+    margin-right: 28%;
+}
+
+input {
+    width: 70%;
+    height: 5vh;
+}
+
+textarea {
+    width: 70%;
+}
+
+#send:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.form {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding-bottom: 3vw;
+    padding: 2%;
+    gap: 3vh;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
+    background-color: antiquewhite;
+}
+
+.footerw {
+    color: rgb(224, 22, 22);
+    text-align: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width :550px) {
+    .img1 {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    a {
+        font-size: small;
+    }
+
+    .imglomakor {
+        margin-top: 20%;
+        height: 15vh;
+    }
+
+    .sma {
+        display: none;
+    }
+
+    .form {
+        width: 70%;
+        margin-top: 0%;
+    }
+
+    .words {
+        font-size: medium;
+    }
+}
